@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    зробіть попередню таску з монго викоритовуючи нод
+
+Створити базу даних Країн всередині одну колекцію в якій зберігати назву, к-ть населеннь, чи є ядерна зброя і т д
+
+записати всередину декілька документів
+
+знайти
+- всіх з ядерною зброєю
+- де к-ть наслення > 5м
+- 5 найбільших країн по площі
+- 5 найменших країн по населенню
+- всіх де є ядерна зброя або армія  кількістю > 100000
+- всіх де є ядерна зброя і армія  кількістю > 100000
+
+порахувати к-ть країн з ядерною зброєю і без неї(використовуючи групування)
+
+порахувати населення всіх країн в яких є ядерна зброя(використовуючи групування)
+
+встановити всім країнам армію в 0 чоловік і відібрати ядерну зброю
+
+видалити найменшу країну
+
+агрегації не обов'язкові(по бажанню)
+
+
+
+db.countries2.insert({
+    'country': 'Germany',
+    'population' : 60,
+    'nuclear' : false,
+    'area' : 10000,
+    'militaries' : 500000
+    },{
+    'country': 'Ukraine',
+    'population' : 40,
+    'nuclear' : false,
+    'area' : 12000,
+    'militaries' : 200000
+    },{
+    'country': 'USA',
+    'population' : 100,
+    'nuclear' : true,
+    'area' : 50000,
+    'militaries' : 700000
+    },{
+    'country': 'Russia',
+    'population' : 80,
+    'nuclear' : true,
+    'area' : 80000,
+    'militaries' : 300000
+    },{
+    'country': 'France',
+    'population' : 70,
+    'nuclear' : true,
+    'area' : 10000,
+    'militaries' : 200000
+    }
+)
+</body>
+</html>
